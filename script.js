@@ -10,7 +10,7 @@ const dropdownBtn   = document.querySelector('.dropdown-button');
 const collapsedH    = '6rem';
 const transitionMs  = 300;   
 const MOBILE_BREAKPOINT = 1279;
-const DESTINATION = "contact@votre‑site.com";
+const DESTINATION = "contact@bilyandray.com";
 
 navLinks.forEach(link => {
     link.addEventListener("mousemove", e => {
@@ -175,25 +175,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   document.getElementById("contact-button").addEventListener("click", () => {
-    const userEmail = document.getElementById("user-email").value.trim();
+  const userEmail = document.getElementById("user-email").value.trim();
 
-    // Basic validation
-    if (!userEmail) {
-      alert("Veuillez saisir votre adresse e‑mail avant d’envoyer.");
-      return;
-    }
+  if (!userEmail) {
+    alert("Veuillez saisir votre adresse e‑mail avant d’envoyer.");
+    return;
+  }
 
-    // Build the mailto link
-    const subject = encodeURIComponent("Contact depuis le site web");
-    const body    = encodeURIComponent(
-      "Bonjour,\n\n" +
-      "(Écrivez votre message ici…)\n\n" +
-      "— " + userEmail
-    );
+  const DESTINATION = "contact@votre-site.com";
+  const subject = encodeURIComponent("Contact depuis le site web");
+  const body = encodeURIComponent(
+    "Bonjour,\n\n(Écrivez votre message ici…)\n\n— " + userEmail
+  );
+  const cc = encodeURIComponent(userEmail);
 
-    const cc         = encodeURIComponent(userEmail);
-    const mailtoLink = `mailto:${DESTINATION}?subject=${subject}&body=${body}&cc=${cc}`;
-
-    // Trigger the user’s default mail client
-    window.location.href = mailtoLink;
-  });
+  // Open Gmail compose in new tab
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${DESTINATION}&su=${subject}&body=${body}&cc=${cc}`;
+  window.open(gmailLink, "_blank");
+});
