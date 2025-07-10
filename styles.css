@@ -121,12 +121,11 @@ h2 {
 
 
 footer {
+  width: 100%;
   background-color: var(--burgundy);
   color: var(--off-white);
   text-align: center;
   padding: clamp(2rem, 5vw, 3rem);
-  margin-inline: 0 !important;
-  width: 100vw !important;
   font-size: clamp(1.4rem, 1vw + 0.8rem, 1.8rem);
 }
 
@@ -1040,7 +1039,7 @@ input:-webkit-autofill {
     display: none;
   }
   footer{
-    width : 100vw;
+    width: 100%;
     margin: 0;
     padding: 2rem;
     font-size: 1.2rem;
@@ -1369,7 +1368,7 @@ input:-webkit-autofill {
     display: none;
   }
   footer{
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 2rem;
     font-size: 1.2rem;
