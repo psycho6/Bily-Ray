@@ -201,6 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Handle mobile <-> desktop switching
 let wasMobile = isMobile();
 window.addEventListener('resize', () => {
+  location.reload();
   const mobileNow = isMobile();
   if (mobileNow && !wasMobile) {
     removeDesktopNavBehaviour();
