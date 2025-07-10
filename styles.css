@@ -33,8 +33,8 @@ header,
 section,
 footer {
   padding: clamp(2rem, 5vw, 6rem) clamp(1.6rem, 4vw, 2rem);
-  margin-inline: auto;
   max-width: 1200px;
+  margin-inline : auto;
 }
 
 section {
@@ -126,6 +126,7 @@ footer {
   color: var(--off-white);
   text-align: center;
   padding: clamp(2rem, 5vw, 3rem);
+  margin-inline: 0;
   width: 100%;
   font-size: clamp(1.4rem, 1vw + 0.8rem, 1.8rem);
 }
