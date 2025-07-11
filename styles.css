@@ -418,7 +418,7 @@ input:-webkit-autofill {
   transition: transform .35s ease;
   display: flex;
   flex-direction: column;
-  height: 80%;
+  width: 42rem !important;
   padding-inline: 1rem;
   padding-top: 1rem;
 }
@@ -821,7 +821,7 @@ input:-webkit-autofill {
   }
   section{
     height: auto;
-    margin-block: 10rem;
+    margin-block: 6rem !important;
   }
   #accueil{
     height: auto;
@@ -874,10 +874,18 @@ input:-webkit-autofill {
   #services {
     position: relative;
     height: auto;
-    margin-top: 45rem;
+    margin-top: 10rem;
+  }
+  .services-swiper {
+    width: 100%;
+    padding: 2rem 0;
+    border: 0.2rem solid var(--gold);
+    border-bottom: none;
+    border-top: 0;
+    margin-bottom: 2rem;
   }
   .service-card{
-    height: 75%;
+    width: 100% !important;
   }
   .service-card-text{
     height: 12rem;
@@ -932,7 +940,7 @@ input:-webkit-autofill {
   }
   #realisations {
     padding-left: 0;
-    margin-bottom: 35rem;
+    margin-bottom: 5rem;
   }
   #realisations h2 {
     padding-left: 1.6rem;
@@ -969,7 +977,7 @@ input:-webkit-autofill {
   }
   #blog {
     padding-left: 0;
-    margin-bottom: 35rem;
+    margin-bottom: 5rem;
   }
   #blog h2 {
     padding-left: 1.6rem;
@@ -1007,7 +1015,7 @@ input:-webkit-autofill {
   }
   #contact {
     padding-left: 0;
-    margin-bottom: 35rem;
+    margin-bottom: 5rem;
   }
   .contact-text-container {
     width: 100%;
@@ -1150,18 +1158,18 @@ input:-webkit-autofill {
     justify-content: space-around;
   }
   section{
-    height: auto;
-    margin-block: 10rem;
+    height: auto !important;
+    margin-block: 10rem !important;
   }
   #accueil{
     height: auto;
     position: relative;
-    margin-bottom: 5rem;
+    margin-bottom: 0rem;
     display: flex;
     flex-direction: column;
   }
   .accueil-section-wrapper{
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-left: 0;
   }
   .accueil-text-container {
@@ -1203,11 +1211,18 @@ input:-webkit-autofill {
   }
   #services {
     position: relative;
-    height: auto;
-    margin-top: 45rem;
+    margin-top: 15rem;
+  }
+  .services-swiper {
+    width: 100%;
+    padding: 2rem 0;
+    border: 0.2rem solid var(--gold);
+    border-bottom: none;
+    border-top: 0;
+    margin-bottom: 2rem;
   }
   .service-card{
-    height: 75%;
+    width: 66% !important;
   }
   .service-card-text{
     height: 12rem;
@@ -1262,7 +1277,7 @@ input:-webkit-autofill {
   }
   #realisations {
     padding-left: 0;
-    margin-bottom: 35rem;
+    margin-bottom: 5rem;
   }
   #realisations h2 {
     padding-left: 1.6rem;
@@ -1299,7 +1314,7 @@ input:-webkit-autofill {
   }
   #blog {
     padding-left: 0;
-    margin-bottom: 35rem;
+    margin-bottom: 5rem;
   }
   #blog h2 {
     padding-left: 1.6rem;
@@ -1337,7 +1352,7 @@ input:-webkit-autofill {
   }
   #contact {
     padding-left: 0;
-    margin-bottom: 35rem;
+    margin-bottom: 5rem;
   }
   .contact-text-container {
     width: 100%;
@@ -1474,7 +1489,7 @@ input:-webkit-autofill {
   #accueil{
     height: auto;
     position: relative;
-    margin-bottom: 28rem;
+    margin-bottom: 15rem;
     display: flex;
     flex-direction: column;
   }
@@ -1493,28 +1508,22 @@ input:-webkit-autofill {
 @media all and (min-width: 1279px) {
   #navbar{                                  
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
-    height:clamp(6rem,6vw+2rem,14rem);
+    height: 9rem !important;
   }
-
-
-  #navbar nav{
-    display:flex !important;        
-    margin:0 !important;           
+  .logo{
+    margin-top: 0.5rem;
+  }
+  #navbar.open{
+    align-items: center;
+    position: fixed;
+  }
+  nav{
+    display:flex !important;                  
     padding:0;
-    gap:clamp(1rem,2vw,3rem);
     align-items:center;             
   }
-
-
-  .nav-links{
-    margin:0;                       
-    display:flex;
-    gap:clamp(1rem,2vw,3rem);
-    flex-wrap:wrap;
-  }
-
   .dropdown-button,
   .dropdown-button-container{ display:none !important; }
 
